@@ -1,0 +1,53 @@
+.swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.swiper-pagination {
+    bottom: 0;
+}
+
+.swiper-slide,
+.layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+}
+
+.item.is-cover .layer-2 {
+    z-index: 0;
+}
+
+.item.is-transparent .layer-2 {
+    z-index: 1;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.layer-1 {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 20px;
+    padding: 5px;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+}
+
+.layer-2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
